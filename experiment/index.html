@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Creative HTML Page</title>
+  </head>
+  <body>
+    <h1>Experiment</h1>
+    <p>This is an area for me to experiment with HTML.</p>
+
+    <pre>
+ _______
+|       |
+| Hello |
+|_______|
+    </pre>
+
+    <code> this is some code </code>
+
+    <picture>
+      <source srcset="desktop.jpeg" media="(min-width: 768px)">
+      <img src="mobile.jpeg" alt="Responsive Image">
+    </picture>
+
+    <iframe
+      width="600"
+      height="450"
+      frameborder="0"
+      style="border: 0"
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3152.223992348446!2d-122.4194150846696!3d37.774929979756!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8085875df792e57d%3A0x1f17c19e4a497512!2sGolden%20Gate%20Bridge!5e0!3m2!1sen!2sus!4v1630958977526!5m2!1sen!2sus"
+      allowfullscreen
+    ></iframe>
+
+    <audio controls>
+      <source src="music.mp3" type="audio/mpeg">
+      Your browser does not support the audio tag.
+    </audio>
+
+    <video width="400" controls>
+      <source src="video.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+
+    <source src="video.webm" type="video/webm">
+
+    <canvas
+      id="canvas"
+      width="200"
+      height="100"
+      style="border: 1px solid #000"
+    ></canvas>
+    <script>
+      const ctx = document.getElementById("canvas").getContext("2d");
+      ctx.font = "30px Arial";
+      ctx.fillText("Hello, Canvas!", 10, 50);
+    </script>
+
+    <svg width="100" height="100">
+      <circle
+        cx="50"
+        cy="50"
+        r="40"
+        stroke="green"
+        stroke-width="4"
+        fill="yellow"
+     >
+    </svg>
+
+    <template>
+      <button>this is a button in a template</button>
+    </template>
+  </body>
+</html>

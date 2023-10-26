@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ben Tomlin</title>
+    <link rel="stylesheet" href="style.css" />
+    <style>
+      img {
+        height: 14rem;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <img src="/selfie.jpeg" alt="A headshot of Ben" />
+      <h1><b>Ben Tomlin</b></h1>
+      <ul>
+        <li><a target="_blank" href="https://github.com/bent101">Github</a></li>
+        <li>
+          <a
+            target="_blank"
+            href="https://www.linkedin.com/in/ben-tomlin-46b788275/"
+            >Linkedin</a
+          >
+        </li>
+        <li>
+          <a target="_blank" href="https://resume.bentomlin.dev">Resume</a>
+        </li>
+        <li>
+          <a href="/experiment"><span>Experiment</span></a>
+        </li>
+      </ul>
+    </header>
+    <aside>
+      <nav>
+        <a href="#about"><i>About</i></a>
+        <a href="#skills"><i>Skills</i></a>
+        <a href="#projects"><i>Projects</i></a>
+        <a href="#contact"><i>Contact</i></a>
+      </nav>
+    </aside>
+    <hr />
+    <main>
+      <section id="about">
+        <h2>Hi, I'm Ben</h2>
+        <p>
+          I'm a <i>3rd year Computer Science major</i> at
+          <strong>UC San Diego</strong>. I started exploring web development in
+          November of 2022 and have been loving every second of it.
+          <br />
+          Before that, I enjoyed learning about data structures and algorithms.
+        </p>
+        <details>
+          <summary>Here are my <em>top 5 HTML tags</em>:</summary>
+          <ol>
+            <li><code>div</code></li>
+            <li><code>div</code></li>
+            <li><code>div</code></li>
+            <li><code>div</code></li>
+            <li><code>div</code></li>
+          </ol>
+        </details>
+      </section>
+      <section id="skills">
+        <h2>My Skills</h2>
+        <p>
+          Here are some of the skills I've acquired over the past year or so.
+        </p>
+        <table>
+          <caption>
+            Skills
+          </caption>
+          <colgroup>
+            <col />
+          </colgroup>
+          <tr>
+            <th>Skill</th>
+            <th>Proficiency</th>
+            <th>Started learning</th>
+          </tr>
+          <tr>
+            <td>HTML</td>
+            <td>7</td>
+            <td>Nov 2022</td>
+          </tr>
+          <tr>
+            <td>CSS</td>
+            <td>8</td>
+            <td>Nov 2022</td>
+          </tr>
+          <tr>
+            <td>Javascript</td>
+            <td>7</td>
+            <td>Nov 2022</td>
+          </tr>
+          <tr>
+            <td>Typescript</td>
+            <td>8</td>
+            <td>Jan 2023</td>
+          </tr>
+          <tr>
+            <td>Tailwind</td>
+            <td>8</td>
+            <td>Jan 2023</td>
+          </tr>
+          <tr>
+            <td>Svelte</td>
+            <td>7</td>
+            <td>Feb 2023</td>
+          </tr>
+          <tr>
+            <td>React</td>
+            <td>7</td>
+            <td>Apr 2023</td>
+          </tr>
+          <tr>
+            <td>Next.js</td>
+            <td>6</td>
+            <td>July 2023</td>
+          </tr>
+        </table>
+      </section>
+      <section id="projects">
+        <h2>My Projects</h2>
+
+        <div>
+          <h3>donequick</h3>
+          <p>
+            This is a realtime shareable lists app made with SvelteKit and
+            Firebase. It aims to be intuitive, keyboard friendly, and
+            minimalistic. I used Firestore, Auth, and Security Rules to allow
+            for fast and secure list sharing.
+          </p>
+          <figure>
+            <img src="/assets/donequick.webp" />
+            <figcaption>A screenshot of donequick</figcaption>
+          </figure>
+        </div>
+
+        <div>
+          <h3>MCSR Ranked Stats</h3>
+          <p>
+            <a href="https://mcsrranked.com" target="_blank" rel="noreferrer">
+              Minecraft Speedrunning (MCSR) Ranked
+            </a>
+            is a Minecraft mod that lets speedrunners race each other in the
+            same seed, but on different worlds. The devs of the mod made a
+            public API for the leaderboards, player stats, match timelines, and
+            more, so I made this website to help players understand and compare
+            their stats. It gets 400+ MAUs and 3,000+ page views per month.
+          </p>
+          <figure>
+            <img src="/assets/mcsrrankedstats.webp" />
+            <figcaption>A screenshot of MCSR Ranked Stats</figcaption>
+          </figure>
+        </div>
+
+        <div>
+          <h3>UCSD Courses</h3>
+          <p>
+            I thought this project would be an easy way to practice frontend: I
+            would just scrape the
+            <a
+              target="_blank"
+              href="https://catalog.ucsd.edu/front/courses.html"
+              >UCSD course catalog</a
+            >
+            with a bit of Python and make a better-looking one. I couldn't have
+            been more wrong. The HTML structure (and the text content) of the
+            UCSD course catalog is so messy and inconsistent, that the first
+            month of the project was spent just on the scraping. It took over
+            500 lines of Python (and some manual fixes) to parse, filter,
+            organize, and interlink the 6,888 courses across 82 pages. The
+            result is 82 lists of interlinked courses that you can switch
+            between and save links to.
+          </p>
+          <figure>
+            <img src="/assets/ucsdcourses.webp" />
+            <figcaption>A comparison of my site to the original</figcaption>
+          </figure>
+        </div>
+      </section>
+      <section id="contact">
+        <h2>Contact me</h2>
+        <form>
+          <fieldset>
+            <legend>Contact Information</legend>
+
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required />
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required />
+
+            <label for="phone">Phone:</label>
+            <input type="tel" id="phone" name="phone" />
+          </fieldset>
+
+          <fieldset>
+            <legend>Message</legend>
+
+            <label for="subject">Subject:</label>
+            <input type="text" id="subject" name="subject" />
+
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" rows="4" required></textarea>
+          </fieldset>
+
+          <fieldset>
+            <legend>How did you hear about me?</legend>
+
+            <select id="hear-about" name="hear-about">
+              <optgroup label="People">
+                <option value="friend">Friend</option>
+                <option value="coworker">Enemy</option>
+                <option value="coworker">Coworker</option>
+              </optgroup>
+              <optgroup label="Other">
+                <option value="social-media">Social Media</option>
+                <option value="search-engine">Search Engine</option>
+                <option value="other">Other</option>
+              </optgroup>
+            </select>
+
+            <label for="other-source">Other Source:</label>
+            <input
+              type="text"
+              id="other-source"
+              name="other-source"
+              list="sources"
+            />
+
+            <datalist id="sources">
+              <option value="Event"></option>
+              <option value="Newsletter"></option>
+              <option value="Advertisement"></option>
+              <option value="Word of Mouth"></option>
+            </datalist>
+          </fieldset>
+
+          <button type="submit">Submit</button>
+        </form>
+      </section>
+    </main>
+    <footer>
+      <p>Copyright &copy; 2023 Ben Tomlin</p>
+    </footer>
+  </body>
+</html>
