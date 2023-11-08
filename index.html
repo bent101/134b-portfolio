@@ -8,51 +8,41 @@
   </head>
   <body>
     <header>
-      <img src="/selfie.jpeg" alt="A headshot of Ben" />
-      <h1><b>Ben Tomlin</b></h1>
-      <ul>
-        <li><a target="_blank" href="https://github.com/bent101">Github</a></li>
-        <li>
-          <a
-            target="_blank"
-            href="https://www.linkedin.com/in/ben-tomlin-46b788275/"
-            >Linkedin</a
-          >
-        </li>
-        <li>
-          <a target="_blank" href="https://resume.bentomlin.dev">Resume</a>
-        </li>
-      </ul>
-    </header>
-    <aside>
+      <div>
+        <img src="/selfie.jpeg" alt="A headshot of Ben" />
+        <h1>Ben Tomlin</h1>
+        <ul>
+          <li>
+            <a target="_blank" href="https://github.com/bent101">Github</a>
+          </li>
+          <li>
+            <a
+              target="_blank"
+              href="https://www.linkedin.com/in/ben-tomlin-46b788275/"
+              >Linkedin</a
+            >
+          </li>
+          <li>
+            <a target="_blank" href="https://resume.bentomlin.dev">Resume</a>
+          </li>
+        </ul>
+      </div>
       <nav>
-        <a href="#about"><i>About</i></a>
-        <a href="#skills"><i>Skills</i></a>
-        <a href="#projects"><i>Projects</i></a>
-        <a href="#contact"><i>Contact</i></a>
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
       </nav>
-    </aside>
-    <hr />
+    </header>
     <main>
       <section id="about">
         <h2>Hi, I'm Ben</h2>
         <p>
-          I'm a <i>3rd year Computer Science major</i> at
+          I'm a 3rd year Computer Science major at
           <strong>UC San Diego</strong>. I started exploring web development in
-          November of 2022 and have been loving every second of it.
-          <br />
-          Before that, I enjoyed learning about data structures and algorithms.
+          November of 2022 and have been loving every second of it. Before that,
+          I enjoyed learning about data structures and algorithms.
         </p>
-        <details>
-          <summary>Here are my <em>top 5 HTML tags</em>:</summary>
-          <ol>
-            <li><code>div</code></li>
-            <li><code>div</code></li>
-            <li><code>div</code></li>
-            <li><code>div</code></li>
-            <li><code>div</code></li>
-          </ol>
-        </details>
       </section>
       <section id="skills">
         <h2>My Skills</h2>
@@ -60,14 +50,6 @@
           Here are some of the skills I've acquired over the past year or so.
         </p>
         <table>
-          <caption>
-            Skills
-          </caption>
-          <colgroup>
-            <col />
-            <col />
-            <col />
-          </colgroup>
           <tr>
             <th>Skill</th>
             <th>Proficiency</th>
@@ -75,42 +57,42 @@
           </tr>
           <tr>
             <td>HTML</td>
-            <td>7</td>
+            <td>5</td>
             <td>Nov 2022</td>
           </tr>
           <tr>
             <td>CSS</td>
-            <td>8</td>
+            <td>6</td>
             <td>Nov 2022</td>
           </tr>
           <tr>
             <td>Javascript</td>
-            <td>7</td>
+            <td>5</td>
             <td>Nov 2022</td>
           </tr>
           <tr>
             <td>Typescript</td>
-            <td>8</td>
+            <td>6</td>
             <td>Jan 2023</td>
           </tr>
           <tr>
             <td>Tailwind</td>
-            <td>8</td>
+            <td>6</td>
             <td>Jan 2023</td>
           </tr>
           <tr>
             <td>Svelte</td>
-            <td>7</td>
+            <td>5</td>
             <td>Feb 2023</td>
           </tr>
           <tr>
             <td>React</td>
-            <td>7</td>
+            <td>5</td>
             <td>Apr 2023</td>
           </tr>
           <tr>
             <td>Next.js</td>
-            <td>6</td>
+            <td>4</td>
             <td>July 2023</td>
           </tr>
         </table>
@@ -118,7 +100,7 @@
       <section id="projects">
         <h2>My Projects</h2>
 
-        <div>
+        <article>
           <h3>donequick</h3>
           <p>
             This is a realtime shareable lists app made with SvelteKit and
@@ -130,9 +112,9 @@
             <img src="/assets/donequick.webp" />
             <figcaption>A screenshot of donequick</figcaption>
           </figure>
-        </div>
+        </article>
 
-        <div>
+        <article>
           <h3>MCSR Ranked Stats</h3>
           <p>
             <a href="https://mcsrranked.com" target="_blank" rel="noreferrer">
@@ -142,15 +124,15 @@
             same seed, but on different worlds. The devs of the mod made a
             public API for the leaderboards, player stats, match timelines, and
             more, so I made this website to help players understand and compare
-            their stats. It gets 400+ MAUs and 3,000+ page views per month.
+            their stats. It gets 500+ users and 5,000+ page views per month.
           </p>
           <figure>
             <img src="/assets/mcsrrankedstats.webp" />
             <figcaption>A screenshot of MCSR Ranked Stats</figcaption>
           </figure>
-        </div>
+        </article>
 
-        <div>
+        <article>
           <h3>UCSD Courses</h3>
           <p>
             I thought this project would be an easy way to practice frontend: I
@@ -173,8 +155,9 @@
             <img src="/assets/ucsdcourses.webp" />
             <figcaption>A comparison of my site to the original</figcaption>
           </figure>
-        </div>
+        </article>
       </section>
+
       <section id="contact">
         <h2>Contact me</h2>
         <form>
@@ -217,7 +200,9 @@
               </optgroup>
             </select>
 
-            <label for="other-source">Other Source:</label>
+            <br />
+            <br />
+            <label>Other Source:</label>
             <input
               type="text"
               id="other-source"
