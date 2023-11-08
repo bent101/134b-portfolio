@@ -112,6 +112,11 @@
             <picture>
               <source srcset="/assets/donequick.webp" type="image/webp" />
               <source srcset="/assets/donequick.jpg" type="image/jpeg" />
+              <source
+                media="(max-width: 768px)"
+                srcset="/assets/donequick-small.jpeg"
+                type="image/jpeg"
+              />
               <img src="/assets/donequick.jpg" alt="" />
             </picture>
             <figcaption>A screenshot of donequick</figcaption>
@@ -134,6 +139,11 @@
             <picture>
               <source srcset="/assets/mcsrrankedstats.webp" type="image/webp" />
               <source srcset="/assets/mcsrrankedstats.jpg" type="image/jpeg" />
+              <source
+                media="(max-width: 768px)"
+                srcset="/assets/mcsrrankedstats-small.jpeg"
+                type="image/jpeg"
+              />
               <img src="/assets/mcsrrankedstats.jpg" alt="" />
             </picture>
             <figcaption>A screenshot of MCSR Ranked Stats</figcaption>
@@ -163,6 +173,11 @@
             <picture>
               <source srcset="/assets/ucsdcourses.webp" type="image/webp" />
               <source srcset="/assets/ucsdcoursesuick.jpg" type="image/jpeg" />
+              <source
+                media="(max-width: 768px)"
+                srcset="/assets/ucsdcoursesuick-small.jpeg"
+                type="image/jpeg"
+              />
               <img src="/ucsdcourses/donequick.jpg" alt="" />
             </picture>
             <figcaption>A comparison of my site to the original</figcaption>
@@ -176,23 +191,23 @@
           <fieldset>
             <legend>Contact Information</legend>
 
-            <label for="name">Name:</label>
+            <label for="name">Name</label>
             <input type="text" id="name" name="name" required />
 
-            <label for="email">Email:</label>
+            <label for="email">Email</label>
             <input type="email" id="email" name="email" required />
 
-            <label for="phone">Phone:</label>
+            <label for="phone">Phone</label>
             <input type="tel" id="phone" name="phone" />
           </fieldset>
 
           <fieldset>
             <legend>Message</legend>
 
-            <label for="subject">Subject:</label>
+            <label for="subject">Subject</label>
             <input type="text" id="subject" name="subject" />
 
-            <label for="message">Message:</label>
+            <label for="message">Message</label>
             <textarea id="message" name="message" rows="4" required></textarea>
           </fieldset>
 
@@ -214,7 +229,7 @@
 
             <br />
             <br />
-            <label>Other Source:</label>
+            <label>Other Source</label>
             <input
               type="text"
               id="other-source"
