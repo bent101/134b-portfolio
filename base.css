@@ -1,0 +1,43 @@
+@font-face {
+  font-family: Nunito;
+  src: url(/assets/nunito.ttf);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: unset;
+  color: unset;
+  font-family: Nunito, Arial, Helvetica, sans-serif;
+}
+
+i,
+em {
+  font-style: italic;
+}
+
+b,
+strong {
+  font-weight: bold;
+}
+
+input,
+textarea {
+  width: 100%;
+  display: block;
+}
+
+button {
+  all: unset;
+  display: inline-block;
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
