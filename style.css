@@ -1,5 +1,5 @@
 @import url(/base.css);
-/* @import url(/vars.css); */
+@import url(/vars.css);
 
 * {
   color: var(--primary-300, hsl(240 100% 70%));
