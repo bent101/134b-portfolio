@@ -28,12 +28,6 @@ const commentsError = document.querySelector(
 );
 const formErrorsEl = document.querySelector("#form-errors");
 
-form.addEventListener("cancel", (event) => {
-	event.preventDefault();
-	console.log("cancel");
-	form.reset();
-});
-
 form.addEventListener("input", (event) => {
 	// add form errors
 	const form_errors = [];
@@ -45,7 +39,6 @@ form.addEventListener("input", (event) => {
 	}
 
 	formErrorsEl.value = JSON.stringify(form_errors);
-	console.log(form_errors);
 
 	// set custom error messages
 	if (nameInput.validity.valueMissing) {
@@ -87,14 +80,12 @@ commentsInput.addEventListener("input", () => {
 
 	if (!/^[ -~\r\n\t]*$/.test(message)) {
 		commentsInput.setCustomValidity("Please use English characters only.");
-		commentsError.textContent = "Please use English characters only.";
 		commentsError.classList.add("shown");
 
 		clearTimeout(timeoutId);
 		timeoutId = setTimeout(() => commentsError.classList.remove("shown"), 3000);
 	} else {
 		commentsInput.setCustomValidity("");
-		commentsError.textContent = "";
 		commentsError.classList.remove("shown");
 	}
 });

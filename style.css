@@ -301,6 +301,11 @@ input:user-invalid {
 	outline: 2px solid #c00;
 }
 
+textarea:user-invalid {
+	background-image: linear-gradient(#f88, #fdd);
+	outline: 2px solid #c00;
+}
+
 .outputs {
 	display: flex;
 }
@@ -322,6 +327,7 @@ output[name="errors"] {
 }
 
 input:user-invalid + .outputs > output[name="errors"],
+textarea:user-invalid + .outputs > output[name="errors"],
 output[name="errors"].shown {
 	height: 1.5em;
 	visibility: visible;

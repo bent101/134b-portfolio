@@ -223,7 +223,7 @@
 
 			<section id="contact">
 				<h2>Contact me</h2>
-				<form method="post" action="https://httpbin.org/post" novalidate>
+				<form method="post" action="https://httpbin.org/post">
 					<fieldset>
 						<legend>Contact Information</legend>
 
@@ -279,7 +279,9 @@
 							maxlength="300"
 						></textarea>
 						<div class="outputs">
-							<output for="comments" name="errors"></output>
+							<output for="comments" name="errors"
+								>Please leave a comment with English characters only</output
+							>
 							<output for="comments" name="info">0/300</output>
 						</div>
 					</fieldset>
